@@ -1,66 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🥟 Authentic Dimsum - Food Ordering Web App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-## About Laravel
+**Authentic Dimsum** adalah aplikasi website pemesanan makanan (e-commerce) yang dirancang khusus untuk menyajikan menu dimsum dengan pengalaman pengguna yang modern, bersih, dan responsif. Aplikasi ini memudahkan pelanggan untuk melihat menu, membaca ulasan, dan mengelola keranjang belanja mereka sebelum melakukan pemesanan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📸 Pratinjau Antarmuka (Screenshots)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🏠 Halaman Utama (Landing Page)
+Menampilkan daya tarik utama restoran, keunggulan produk, dan testimoni pelanggan.
 
-## Learning Laravel
+| Hero Section | Why Choose Us | Testimonials |
+| :---: | :---: | :---: |
+| ![Hero](docs/MainPageHero.png) | ![Reason](docs/MainPageReason.png) | ![Testimoni](docs/MainPageTestimoni.png) |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🛒 Pemesanan & Pembelanjaan
+Halaman interaktif bagi pelanggan untuk memilih menu dan mengelola total belanja.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+| Halaman Menu Dimsum | Keranjang Belanja (Cart) |
+| :---: | :---: |
+| ![Menu Page](docs/MenuPage.png) | ![Keranjang Belanja](docs/KeranjangPage.png) |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Fitur-Fitur Utama
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 1. 🏠 Landing Page Interaktif & Menarik
+* **Hero Section**: Menampilkan visual dimsum yang menggugah selera dengan tombol Call-to-Action (CTA) yang jelas (*Order Now* & *Our Menu*).
+* **Why Choose Us**: Menyoroti nilai jual utama seperti *Authentic Taste*, *Premium Ingredients*, dan *Handcrafted*.
+* **Customer Testimonials**: Menampilkan ulasan pelanggan untuk membangun kepercayaan pengunjung.
 
-### Premium Partners
+### 2. 📋 Halaman Menu Produk yang Informatif
+* **Grid Card Modern**: Setiap produk ditampilkan dalam kartu dengan gambar, nama, harga, stok, rating, dan jumlah terjual.
+* **Rating & Stok**: Rating bintang (skala 1–5) dan indikator stok membantu pelanggan memilih produk.
+* **Counter Pesanan**: Tombol `-` dan `+` yang interaktif untuk menyesuaikan jumlah pesanan langsung dari halaman menu.
+* **Tombol Pesan Cepat**: Tambahkan item ke keranjang hanya dengan satu klik, tanpa harus masuk ke halaman detail.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 3. 🛍️ Sistem Keranjang Belanja (Cart) yang Dinamis
+* **Dropdown Keranjang**: Preview keranjang bisa diakses dari ikon keranjang di navbar kapan saja.
+* **Halaman Keranjang**: Tampilan lengkap dengan daftar item, quantity, harga satuan, subtotal, dan opsi hapus.
+* **Checkout Selektif**: Pilih item yang akan dibeli melalui checkbox, total otomatis terhitung sesuai item terpilih.
+* **Login Terintegrasi**: Pengguna harus login untuk menyimpan dan mengelola keranjang (keranjang berbasis user).
 
-## Contributing
+### 4. 👤 Sistem Autentikasi Pengguna
+* **Login & Register**: Halaman autentikasi yang bersih untuk mengakses fitur personal.
+* **Profile Pengguna**: Setelah login, nama pengguna dan tautan profil muncul di navbar.
+* **Keamanan Sesuai Role**: Pembatasan akses fitur keranjang dan pemesanan hanya untuk pengguna yang sudah login.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 5. 🧭 Navigasi Modern & Responsif
+* **Navbar Sticky**: Navigasi tetap terlihat saat menggulir, dengan logo, menu, dan ikon keranjang.
+* **Menu Mobile (Hamburger)**: Animasi transisi yang halus untuk tampilan mobile.
+* **Desain Minimalis**: Warna netral (putih/abu-abu) dengan aksen oranye yang tidak berlebihan.
+* **Footer Informatif**: Memuat tautan cepat, kontak, dan ikon media sosial dengan tampilan dark mode yang elegan.
 
-## Code of Conduct
+### 6. 📱 Desain Sepenuhnya Responsif & Clean UI
+* **Tailwind CSS Utility-First**: Seluruh tata letak dibangun menggunakan framework Tailwind untuk konsistensi dan kemudahan kustomisasi.
+* **Dua Tampilan Menu**: Kartu produk memiliki versi desktop (dengan counter & tombol pesan) dan versi mobile (dengan tombol “Lihat Detail”) untuk kenyamanan pengguna.
+* **Animasi Halus**: Transisi pada hover, dropdown, dan mobile menu meningkatkan UX tanpa mengganggu.
+* **Palet Warna Netral + Aksen**: Background putih/abu-abu membuat gambar produk lebih menonjol, dengan aksen oranye sebagai pemandu aksi.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Teknologi yang Digunakan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* **Frontend**: HTML5, CSS3 (Tailwind CSS Framework), Vanilla JavaScript.
+* **Backend & Database**: PHP Native & MySQL (Untuk manajemen data produk dan pesanan).
+* **Desain UI/UX**: Clean & Minimalist interface dengan fokus pada *Food Photography* (White & Orange Theme).
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🚀 Panduan Instalasi (Local Development)
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal (localhost):
+
+### 1. Simpan Project ke Web Server Lokal
+Letakkan direktori proyek ini di dalam folder server lokal kamu (Laragon atau XAMPP):
+* **Jika pakai Laragon**: `C:\laragon\www\nama-folder-dimsum`
+* **Jika pakai XAMPP**: `C:\xampp\htdocs\nama-folder-dimsum`
+
+### 2. Setup Database MySQL
+1. Buka browser dan akses **phpMyAdmin** (`http://localhost/phpmyadmin`).
+2. Buat database baru (contoh: `db_dimsum`).
+3. Import file `.sql` bawaan proyek (jika ada) ke dalam database yang baru saja dibuat.
+4. Sesuaikan file koneksi database (misal: `koneksi.php`) dengan kredensial localhost kamu (user: `root`, password: ``, nama database: `db_dimsum`).
+
+### 3. Install Dependencies (Jika Menggunakan Tailwind via NPM)
+Buka terminal/Command Prompt di dalam folder proyek, lalu jalankan:
+```bash
+# Install dependencies
+npm install
+
+# Compile Tailwind CSS (Watch mode untuk development)
+npm run dev
